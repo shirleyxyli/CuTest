@@ -1,0 +1,76 @@
+[
+  {
+    "id": "add-more",
+    "tags": [
+      {
+        "name": "@Calculator",
+        "line": 1
+      }
+    ],
+    "description": "",
+    "name": "add more",
+    "keyword": "Feature",
+    "line": 2,
+    "elements": [
+      {
+        "id": "add-more;add-more",
+        "description": "",
+        "name": "add more",
+        "keyword": "Scenario",
+        "line": 3,
+        "steps": [
+          {
+            "result": {
+              "duration": 101705946,
+              "status": "passed"
+            },
+            "name": "input BaseNum 1",
+            "keyword": "Given ",
+            "line": 4,
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 14
+                }
+              ],
+              "location": "SecondCase.InputBase(int)"
+            }
+          },
+          {
+            "result": {
+              "duration": 889409,
+              "status": "passed"
+            },
+            "name": "start to add",
+            "keyword": "When ",
+            "line": 5,
+            "match": {
+              "location": "SecondCase.RuAdd()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1981524,
+              "status": "passed"
+            },
+            "name": "the result should be 10",
+            "keyword": "Then ",
+            "line": 6,
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 21
+                }
+              ],
+              "location": "SecondCase.GetResult(int)"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "uri": "src/test/features/SecondCase.feature"
+  }
+]
